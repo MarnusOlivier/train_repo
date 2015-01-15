@@ -51,9 +51,12 @@ cd ~/test--repo
 git init		(Initialize a local Git Repository in this directory)	
 git remote add origin https://github.com/MarnusOlivier/test.git	(point your local repository at the remote repository you just created on the GitHub server)
 
--------------------
-Basic Git Commands 
--------------------
+for some reason i do not understand yet you first have tot do the following prior to pushing your file onto Github:
+	git pull origin master
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Git Commands to add the changes to the staging/index stage then commit them to the head and ultimately push them to the remote server  
+--------------------------------------------------------------------------------------------------------------------------------------
 Adding (this adds the changes you made to the index stage)
 -----------------------------------------------------------
 Suppose you add new files to a local repository under version control
@@ -64,14 +67,12 @@ You need to let Git know that they need to be tracked
 	git add	-A	(does both of the previous)
 
 Committing (this adds the changes you made to the head stage the final stage on the working repository)
------------
+--------------------------------------------------------------------------------------------------------
 You have changes you want to commit to be saved as an intermediate version
 	git commit -m "message"  	(where message is a useful description of what you did)
 					(this only updates your local repo, not the remote repo on Github)
 Pushing
 --------
-for some reason i do not understand yet you first have tot do the following prior to pushing your file onto Github:
-	git pull origin master
 You have saved local commits you would like to update on the remote (Github)
 	git push
 
