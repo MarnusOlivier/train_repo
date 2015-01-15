@@ -2,37 +2,47 @@
 ## Creating and managing files and directories
 pwd 
 * print working directory
+
 clear   
 * clears the screen
+
 ls 
 * lists files and folders in current working directory
+
 cd 
 * changes the directory
 * without any argument takes you back to your home directory
 * cd .. allows you to change directory one level above your current directory
 * cd filepath takes you to that directory which becomes your working directory
+
 mkdir
 * makes a new directory
 * makdir directory_NAME
+
 touch
 * creates a new file
 * touch filename
+
 cp
 * stands for copy
 * cp file_name_you_want_to_copy directory_to_which_you_want_to_copy_to_in_your_working_directory
-* cp -r argument_1 argument_2  (copies all the files from the directory in argument_1 to the files in argument_2) 
+* cp -r argument_1 argument_2  (copies all the files from the directory in argument_1 to the files in argument_2)
+ 
 rm
 * stands for remove
 * rm file_to_remove
 * rm -r directory_name  (removes all the files in that directory but there is not undo so be very careful!)
+
 mv
 * stands for move
 * mv file_name_you_want_to_move directory_to_which_you_want_to_move_to_in_your_working_directory 
 * can also use mv to rename files)
 * mv old_file_name new_file_name
+
 echo
 * will print whatever arguments you provide
-* echo Hello World!	
+* echo Hello World!
+	
 date
 * prints out the date
 * date
