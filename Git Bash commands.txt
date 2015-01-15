@@ -63,7 +63,7 @@ You need to let Git know that they need to be tracked
 	git add -u	(updates tracking for files that changed names or were deleted)
 	git add	-A	(does both of the previous)
 
-Committing
+Committing (this adds the changes you made to the head stage the final stage on the working repository)
 -----------
 You have changes you want to commit to be saved as an intermediate version
 	git commit -m "message"  	(where message is a useful description of what you did)
