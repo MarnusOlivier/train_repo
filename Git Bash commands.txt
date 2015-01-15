@@ -51,9 +51,10 @@ cd ~/test--repo
 git init		(Initialize a local Git Repository in this directory)	
 git remote add origin https://github.com/MarnusOlivier/test.git	(point your local repository at the remote repository you just created on the GitHub server)
 
---------------------------------------------------------------------------------------------------------------------------------------
-Git Commands to add the changes to the staging/index stage then commit them to the head and ultimately push them to the remote server  
---------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------
+Adding, committing, pushing, branches  
+--------------------------------------
+
 Adding (this adds the changes you made to the index stage)
 -----------------------------------------------------------
 Suppose you add new files to a local repository under version control
@@ -68,13 +69,35 @@ Committing (this adds the changes you made to the head stage the final stage on 
 You have changes you want to commit to be saved as an intermediate version
 	git commit -m "message"  	(where message is a useful description of what you did)
 					(this only updates your local repo, not the remote repo on Github)
-Pushing
---------
+
+Pushing (The changes are now in the HEAD of the local working copy. To send those changes to your remote repository they need to be pushed)  
+--------------------------------------------------------------------------------------------------------------------------------------------
 for some reason i do not understand yet you first have tot do the following prior to pushing your file onto Github:
 	git pull origin master
 
 You have saved local commits you would like to update on the remote (Github)
 	git push
+	git push master
+
+Branches (Branches are used to develop features isolated from each other. The master branch is the "default" branch when you create a repository. Use other branches for development and merge them back to the master branch upon completion)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sometimes you are working on a project with a version being used by many people
+You want to edit that version
+
+You can then create a branch with the command
+	git checkout -b branchname
+
+To delete a branch you can do the following
+	git branch -d branchname
+
+To see what branch you are on type:
+	git branch
+
+To switch back to the master brach type
+	git checkout master
+
+A branch is not available to others unless you push the branch to your remote repository
+	git push origin brachname
 
 Cloning
 --------
@@ -82,14 +105,5 @@ Copying a repo to your local machine
 	git clone url_you_would_like_to_clone
 
 
-Branches
---------
-Sometimes you are working on a project with a version being used by many people
-You want to edit that version
-You can then create a branch with the command
-	git checkout -b branchname
-To see what branch you are on type:
-	git branch
-To switch back to the master brach type
-	git checkout master
+
 
