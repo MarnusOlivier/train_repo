@@ -1,16 +1,16 @@
 # Important GitBash commands 
 ## Creating and managing files and directories
 pwd 
-* print working directory.
+* print working directory
 clear   
-* clears the screen.
+* clears the screen
 ls 
-* lists files and folders in current working directory.
+* lists files and folders in current working directory
 cd 
-* changes the directory.
-* without any argument takes you back to your home directory.
-* cd .. allows you to change directory one level above your current directory.
-* cd filepath takes you to that directory which becomes your working directory.
+* changes the directory
+* without any argument takes you back to your home directory
+* cd .. allows you to change directory one level above your current directory
+* cd filepath takes you to that directory which becomes your working directory
 mkdir
 * makes a new directory
 * makdir directory_NAME
