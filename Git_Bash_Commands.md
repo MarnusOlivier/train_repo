@@ -1,5 +1,5 @@
-## Important GitBash commands 
-### Creating and managing files and directories
+##Important GitBash commands 
+###Creating and managing files and directories
 pwd 
 * print working directory
 
@@ -47,19 +47,19 @@ date
 * prints out the date
 * date
 		
-### Editing user name and email
+###Editing user name and email
 * git config --global user.name "Type in your Username"
 * git config --global user.email "Type in your E-mail"
 * git config --list  	(shows all your details)
 
-### Greating repos in your home directory
+###Greating repos in your home directory
 * mkdir ~/test--repo   	(create directory)
 * cd ~/test--repo
 * git init				(Initialize a local Git Repository in this directory)	
 * git remote add origin https://github.com/MarnusOlivier/repo_name.git	(point your local repository at the remote repository you just created on the GitHub server)
 
-### Adding, committing, pushing, branches, update and merging  
-#### Adding
+###Adding, committing, pushing, branches, update and merging  
+####Adding
 This adds the changes you made to the index stage.
 Suppose you add new files to a local repository under version control.
 You need to let Git know that they need to be tracked.
@@ -68,13 +68,13 @@ You need to let Git know that they need to be tracked.
 * git add -u	(updates tracking for files that changed names or were deleted)
 * git add -A	(does both of the previous)
 
-#### Committing 
+####Committing 
 This adds the changes you made to the head stage, the final stage on the working repository.
 You have changes you want to commit to be saved as an intermediate version.
 * git commit -m "message"  	(where message is a useful description of what you did)
 							(this only updates your local repo, not the remote repo on Github)
 
-#### Pushing 
+####Pushing 
 The changes are now in the HEAD of the local working copy. To send those changes to your remote repository they need to be pushed.
 For some reason i do not understand yet you first have tot do the following prior to pushing your file onto Github.
 * git pull origin master
@@ -103,7 +103,7 @@ To switch back to the master brach type:
 A branch is not available to others unless you push the branch to your remote repository:
 * git push origin brachname
 
-#### Update and merge
+####Update and merge
 To update your local repository to the newest commit, execute:
 * git pull
 in your working directory to fetch and merge remote changes.
@@ -118,7 +118,7 @@ After changing, you need to mark them as merged with:
 Before merging changes, you can also preview them by using:
 * git diff source_branch target_branch
 
-### Cloning
+###Cloning
 Copying a repo to your local machine:
 * git clone url_you_would_like_to_clone
 
